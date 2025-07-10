@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -17,17 +17,26 @@ body {
 }
 
 
+.main{
+  background-color: #FEFCFB;
+  
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  background: #fff;
+  padding: 5px 10%;
+  margin-bottom: 3px;
+   width: 1170px;
+  height: 114px; 
+  color: #222222;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+  width: 130px;
+  height: 24px;
 }
 
 .nav-links {
@@ -40,13 +49,13 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #222222;
   font-weight: 500;
 }
 
 .auth-buttons .login {
   margin-right: 15px;
-  color: orange;
+  color: #FD8D3A;
   text-decoration: none;
 }
 
@@ -62,33 +71,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10%;
+  padding: 40px 10%;
+  
 }
 
 .hero-text {
-  max-width: 50%;
+  max-width: 100%;
+  width: 521px;
+  height: 486px;
+  
+  
 }
 
 .hero-text h1 {
   font-size: 48px;
   margin-bottom: 20px;
+ 
 }
 
 .hero-text h1 span {
-  color: orange;
+  color: #FA7436;
+  
 }
 
 .hero-text p {
   font-size: 16px;
-  margin-bottom: 30px;
-  color: #555;
+  margin-bottom: 0;
+  color: #666666;
 }
 
 .btn-discover {
   display: inline-block;
-  border: 2px solid orange;
+  border: 2px solid #FA7436;
   padding: 10px 20px;
-  color: orange;
+  color: #FA7436;
   text-decoration: none;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -96,14 +112,21 @@ body {
 
 .search-boxes {
   display: flex;
-  gap: 15px;
+  gap: 4rem;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #FFFFFF;
+  margin-left: 25%;
+  padding: 10px;
+  width: 841px;
+  height:100px
+
+  
 }
 
 .search-boxes select {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
 }
 
@@ -116,9 +139,12 @@ body {
 }
 
 .hero-image img {
-  max-width: 400px;
-  width: 100%;
+  width: 645px;
+  height: 455px;
+  margin-top: 0;
 }
+
+
 .things-to-do {
   background-color: #f9fbff;
   padding: 80px 10% 100px;
@@ -132,7 +158,7 @@ body {
 }
 
 .section-title span {
-  color: orange;
+  color: #FA7436;
 }
 
 .section-subtext {
