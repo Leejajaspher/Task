@@ -179,12 +179,19 @@ body {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
+  
 }
 
 .section-title span {
   color: #FA7436;
 }
-
+.section-subtext img{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-left: 75%;
+  transform: translateY(-100px);
+}
 .section-subtext {
   color: #777;
   font-size: 16px;
@@ -197,6 +204,7 @@ body {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  transform: translateY(-100px);
 }
 
 .card {
