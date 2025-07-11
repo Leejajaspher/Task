@@ -20,6 +20,7 @@ body {
 .main{
   background-color: #FEFCFB;
   
+  
 }
 .navbar {
   display: flex;
@@ -27,6 +28,7 @@ body {
   align-items: center;
   padding: 5px 10%;
   margin-bottom: 3px;
+  margin-left: 90px;
    width: 1170px;
   height: 114px; 
   color: #222222;
@@ -37,6 +39,7 @@ body {
   font-weight: bold;
   width: 130px;
   height: 24px;
+  
 }
 
 .nav-links {
@@ -79,13 +82,14 @@ body {
   max-width: 100%;
   width: 521px;
   height: 486px;
-  
+   margin-left: 100px;
   
 }
 
 .hero-text h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  width: 500px;
  
 }
 
@@ -98,6 +102,7 @@ body {
   font-size: 16px;
   margin-bottom: 0;
   color: #666666;
+  width: 400px;
 }
 
 .btn-discover {
@@ -111,9 +116,11 @@ body {
 }
 
 .hero-image img {
-  width: 645px;
-  height: 455px;
+  width: 500px;
+  height: 400px;
   margin-top: 0;
+  margin-left: 10%;
+  transform: translateY(-30px);
 }
 
 .search-box {
@@ -142,7 +149,7 @@ body {
 }
 
 .search-item label span {
-  color: orange;
+  color: #FA7436;
   margin-left: 5px;
   font-size: 12px;
 }
@@ -313,7 +320,8 @@ body {
   font-size: 13px;
   margin-bottom: 0;
   margin-left:10px;
-  color: #f39c12;
+  color: #666666;
+  border: none;
 }
 
 .price {
@@ -348,7 +356,7 @@ body {
 .arrow {
   background: white;
   border: 1px solid #ddd;
-  color: orange;
+  color: #FA7436;
   font-size: 18px;
   border-radius: 50%;
   width: 36px;
@@ -358,12 +366,18 @@ body {
   transition: 0.3s;
 }
 .arrow.active{
- background: orange;
+ background: #FA7436;
   color: white;
   border: none;
 }
+.arrow-buttons{
+    margin-left: 70%;
+  transform: translateY(-78px)
+
+}
 
 .vacation {
+  margin-top: 20px;
   padding: 80px 10% 100px;
   text-align: center;
 }
@@ -375,7 +389,7 @@ body {
 }
 
 .vacation .section-title span {
-  color: orange;
+  color: #FA7436;
 }
 
 .vacation .section-subtext {
@@ -389,6 +403,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  background-color: #FEFCFB;
 }
 
 .vacation-card {
@@ -428,7 +443,7 @@ body {
 }
 
 .price {
-  color: orange;
+  color: #FA7436;
   font-weight: 600;
   font-size: 16px;
 }
@@ -447,7 +462,7 @@ body {
 .arrow {
   background: white;
   border: 1px solid #ddd;
-  color: orange;
+  color: #FA7436;
   font-size: 18px;
   border-radius: 50%;
   width: 36px;
@@ -457,7 +472,7 @@ body {
 }
 
 .arrow:hover {
-  background: orange;
+  background: #FA7436;
   color: white;
 }
 .vacation {
@@ -465,101 +480,18 @@ body {
   text-align: center;
 }
 
-.vacation .section-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.vacation .section-title span {
-  color: orange;
-}
-
-.vacation .section-subtext {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.vacation-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.vacation-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  width: 250px;
-  transition: 0.2s ease;
-}
-
-.vacation-card:hover {
-  transform: translateY(-5px);
-}
-
-.vacation-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-.vacation-info {
-  padding: 15px;
-  text-align: left;
-}
-
-.top-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.top-row h3 {
-  font-size: 18px;
-  color: #333;
-}
-
-.price {
-  color: orange;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.bottom-row {
-  display: flex;
-  justify-content: space-between;
-  color: #777;
-  font-size: 14px;
-}
-
-.slider-arrows {
-  margin-top: 30px;
-}
-
-.arrow {
-  background: white;
-  border: 1px solid #ddd;
-  color: orange;
-  font-size: 18px;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.arrow:hover {
-  background: orange;
-  color: white;
-}
 .testimonial {
   background: #f9fbff;
   padding: 80px 10% 100px;
+}
+.testimonial-card .user-image{
+  transform: translateY(-50px);
+  z-index: 2;
+  border: none;
+}
+.element3{
+  transform: translateY(-80px);
+  width: 100px;
 }
 
 .testimonial-content {
@@ -567,10 +499,33 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: 100px;
+}
+.testimonial-box{
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  gap: 10px;
+ width: 600px;
+ height: 200px;
+ box-shadow: #777;
+}
+.testimonial-box h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #111;
+}
+
+.testimonial-box span {
+  font-size: 13px;
+  color: #777;
 }
 
 .left-text {
-  max-width: 40%;
+  max-width: 35%;
+  margin-left: 10px;
 }
 
 .left-text h2 {
@@ -580,13 +535,14 @@ body {
 }
 
 .left-text h2 span {
-  color: orange;
+  color: #FA7436;
 }
 
 .left-text p {
   color: #666;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: 20px;
+  max-width: 200%;
 }
 
 .slider-buttons {
@@ -596,7 +552,7 @@ body {
 .arrow {
   background: white;
   border: 1px solid #ddd;
-  color: orange;
+  color: #FA7436;
   font-size: 18px;
   border-radius: 50%;
   width: 36px;
@@ -607,7 +563,7 @@ body {
 }
 
 .arrow:hover {
-  background: orange;
+  background: #FA7436;
   color: white;
 }
 
@@ -617,6 +573,7 @@ body {
   gap: 15px;
   max-width: 500px;
   position: relative;
+  margin-left: 70px;
 }
 
 .user-image img {
@@ -624,12 +581,11 @@ body {
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 4px orange;
-  position: relative;
+   position: relative;
   top: 25px;
   left: 15px;
   z-index: 2;
+  border: none;
 }
 
 .testimonial-box {
@@ -637,7 +593,9 @@ body {
   padding: 25px 20px 20px;
   border-radius: 12px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
-  margin-left: -20px;
+  margin-left: -40px;
+  width: 900px;
+  height: auto;
   z-index: 1;
 }
 
@@ -658,6 +616,9 @@ body {
   font-size: 13px;
   color: #777;
 }
+.testimonial-box ::after{
+  transform: scaleY(-1);
+}
 .blog {
   padding: 80px 10% 100px;
   text-align: center;
@@ -670,7 +631,7 @@ body {
 }
 
 .blog .section-title span {
-  color: orange;
+  color: #FA7436;
 }
 
 .blog-cards {
@@ -726,16 +687,17 @@ body {
 }
 
 .dot.active {
-  background-color: orange;
+  background-color: #FA7436;
 }
 .subscribe-section {
       background-color: #FA7436;
       padding: 40px 20px;
       text-align: center;
-      color: white;
+      color: rgb(255, 250, 250);
       border-radius: 10px;
       margin: 40px auto;
       max-width: 800px;
+      height: 300px;
       position: relative;
     }
 
@@ -749,8 +711,15 @@ body {
       background: white;
       border-radius: 6px;
       overflow: hidden;
+      padding: 5px ;
+      height: 50px;     
+      transform: translateY(-70px);
     }
-
+    .subscribe-section img{
+      margin-left: 87%;
+      transform: translateY(-128px);
+    }
+    
     .subscribe-box input[type="email"] {
       padding: 10px 15px;
       border: none;
@@ -814,7 +783,10 @@ body {
       text-decoration: none;
       font-size: 20px;
       color: #333;
-      background: #eee;
+      background: white;
       border-radius: 50%;
       padding: 8px;
+    }
+    .social-icons .insta{
+      background-color: #FA7436 ;
     }
